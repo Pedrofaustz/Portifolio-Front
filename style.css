@@ -49,19 +49,20 @@ header {
 }
 
 .sobre h1 {
-  font-size: 22px;
+  font-size: 32px;
   margin-bottom: 8px;
-  color: #333;
+  color: #000000;
   position: relative;
-  padding-left: 28px; /* espaço para a seta */
-  margin: 5px 0;
+  padding-left: 26px; /* espaço para a seta */
+  margin: 2px 0;
+  
 }
 
 .sobre h1::before {
   content: "➤";         /* seta personalizada */
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   font-size: 22px;       /* tamanho da seta */
   color: #4131d1;        /* cor da seta (pode mudar) */
 }
@@ -127,3 +128,90 @@ footer {
     background: #ddd;
     margin-top: 20px;
   }
+
+
+
+/* ----- PROJETOS ----- */
+
+#projetos h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* centraliza os projetos */
+}
+
+.projeto {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;                 /* maior e mais bonito */
+  box-shadow: 0 0 10px #0002;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* animação hover */
+.projeto:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 8px 20px #0003;
+}
+
+.projeto h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.projeto p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* imagens dentro dos projetos */
+.projeto-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projeto-imagens img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px #0003;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .projeto {
+    width: 90%;
+  }
+}
+
+/* ==== ÍCONES SOCIAIS ==== */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social a i {
+  font-size: 35px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social a:hover i {
+  color: #ff9900;
+  transform: scale(1.2);
+}
