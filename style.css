@@ -37,15 +37,16 @@ header {
 }
 
 .sobre {
-  width: 450px;               /* largura da caixa */
-  padding: 40px;              /* espaço interno */
-  background: #ffffff;        /* fundo branco */
-  border-radius: 12px;        /* cantos arredondados */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+  width: 100%;
+  max-width: 450px;     /* mantém bonito no computador */
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   font-family: Arial, sans-serif;
-  margin: 20px auto;          /* centraliza na página */
+  margin: 20px auto;
+  box-sizing: border-box;  /* impede o padding de aumentar a largura */
 }
-
 
 .sobre h1 {
   font-size: 22px;
