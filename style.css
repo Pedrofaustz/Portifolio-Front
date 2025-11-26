@@ -27,8 +27,8 @@ header {
 }
 
 .foto-perfil {
-  width: 400px;
-  height: 435px;
+  width: 500px;
+  height: 555px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
